@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "node"
+install:
+  - composer create-project bmarshall511/stable_starter themes/custom/stable-starter dev-master
+script:
+  - cd themes/custom/stable-starter/assets
+  - npm run build

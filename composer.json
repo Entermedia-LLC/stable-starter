@@ -1,0 +1,52 @@
+{
+    "name": "bmarshall511/stable_starter",
+    "description": "Get a jump start building Drupal 8 and 9 themes using Stable Starter, a sub-theme of Stable.",
+    "type": "drupal-theme",
+    "homepage": "https://github.com/bmarshall511/stable-starter",
+    "authors": [
+        {
+            "name": "Ben Marshall (bmarshall)",
+            "homepage": "https://www.benmarshall.me",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/bmarshall511/stable-starter/issues"
+    },
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "bmarshall511/stable-starter",
+                "version": "master",
+                "source": {
+                    "url": "git://github.com/bmarshall511/stable-starter.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "bmarshall511/gulp_starter": "dev-master",
+        "oomphinc/composer-installers-extender": "^2"
+    },
+    "extra": {
+        "installer-types": [
+            "library"
+        ],
+        "installer-paths": {
+            "assets/": [
+                "bmarshall511/gulp_starter"
+            ]
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "cd assets; npm install; rm -rf .git;"
+        ]
+    }
+}
