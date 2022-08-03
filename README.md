@@ -18,8 +18,9 @@ composer create-project bmarshall511/stable_starter themes/custom/stable-starter
 2. Upload the _stable-starter_ folder to the desired themes folder in your Drupal installation.
 3. Download [gulp-starter](https://github.com/bmarshall511/gulp-starter).
 4. Upload the _gulp-starter_ folder the the _stable-starter_ theme folder and rename it to `assets`.
-5. Install the required node modules in the assets folder by running `npm install` inside the directory.
-6. Enable and make it the active, default theme.
+5. Install the required node modules in the assets folder by running `npm install` inside the `assets` directory.
+6. Download [scss](https://github.com/Entermedia-LLC/scss) & upload it to the `assets/src` directory.
+7. Enable and make it the active, default theme.
 
 ## Development
 
